@@ -35,6 +35,7 @@ class If{
 var nsd = [];
 
 nsd[0] = new Input("int", "TEST");
+
 nsd[1] = new If("Willst du ein NSD machen?", [
     ["Ja", 
         [
@@ -64,6 +65,7 @@ nsd[1] = new If("Willst du ein NSD machen?", [
         ]
     ]
 ]);
+
 nsd[2] = new Operation("Codeblock");
 
 
