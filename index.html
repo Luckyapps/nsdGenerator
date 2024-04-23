@@ -22,8 +22,7 @@
                 </span>
             </span>
         </div>
-         <!--<hr style="color:blueviolet;background-color: blueviolet; height: 3px; border: 1px solid blueviolet">
-       Sec2-->
+        <!--Sec2-->
         <div class="n_shell">
             <div class="n_block">TEXT</div>
             <div class="n_if">
@@ -69,7 +68,44 @@
             <div class="n_block">TEXT</div>
             <div class="n_block">TEXT</div>
         </div>
+        <hr style="color:blueviolet;background-color: blueviolet; height: 3px; border: 1px solid blueviolet">
+        <textarea id="input" onclick='this.style.height = "";this.style.height = this.scrollHeight + "px"' oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' style="width: 100%;">
+var nsd = [];
 
+nsd[0] = new Input("int", "TEST");
+
+nsd[1] = new If("Willst du ein NSD machen?", [
+    ["Ja", 
+        [
+            new Operation("Testblock")
+        ]
+    ],
+    ["Nein", 
+        [
+            new Operation("Testblock")
+        ]
+    ],
+    ["Other", 
+        [
+            new Operation("Codeblock"), 
+            new If("Willst du ein NSD machen?", 
+            [
+                ["Ja", [
+                    new Operation("Testblock")]
+                ],
+                ["Nein", [
+                    new Operation("Testblock")]
+                ],
+                ["Other", [
+                    new Operation("Testblock")]
+                ]
+            ])
+        ]
+    ]
+]);
+
+nsd[2] = new Operation("Codeblock");
+        </textarea><br>
         <button onclick="go()">Start</button>
     </body>
 </html>

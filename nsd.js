@@ -72,6 +72,7 @@ nsd[2] = new Operation("Codeblock");
 console.log(nsd);
 
 function go(){
+    eval(document.getElementsByTagName("textarea")[0].value);
     var html = "";
     nsd.forEach(element => {
         //element.class = element.constructor.name;
