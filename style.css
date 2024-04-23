@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.nsd_shell{
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.nsd_shell span{
+    padding: 5px;
+}
+
+.nsd_block{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.nsd_if_condition{
+    display: flex;
+    justify-content: center;
+}
+
+.nsd_if_values{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nsd_if_value{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.nsd_if_value_block{
+    color:yellow;
+}
+
+/*2*/
+
+.n_shell{
+    border: 1px solid white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.n_block{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    flex:1;
+    align-items: center;
+}
+
+.n_if{
+    border-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, auto); /*Muss nach HTML und dann JS Hardcode*/
+}
+
+.n_if_head{
+    grid-column: 1 / span 4; /*Muss nach HTML und dann JS Hardcode*/
+    background-color: rgb(0, 94, 94);
+}
+
+.n_if_collumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.n_if_collumn > :first-child{
+    background-color: rgb(69, 18, 18);
+    flex:none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="nsd.js"></script>
+        <h1>NSD Generator</h1>
+        <hr>
+
+        <div class="nsd_shell" id="container">
+            <span class="nsd_block">TEXT1</span>
+            <span class="nsd_block">Text2</span>
+            <span class="nsd_if_condition">Wenn bla bla bla</span>
+            <span class="nsd_if_values">
+                <span class="nsd_if_value">
+                    <span class="nsd_if_value_block nsd_block">TEST</span>
+                </span>
+                <span class="nsd_if_value">
+                    <span class="nsd_if_value_block nsd_block">TEXT</span>
+                    <span class="nsd_block">Block</span>
+                </span>
+            </span>
+        </div>
+         <!--<hr style="color:blueviolet;background-color: blueviolet; height: 3px; border: 1px solid blueviolet">
+       Sec2-->
+        <div class="n_shell">
+            <div class="n_block">TEXT</div>
+            <div class="n_if">
+                <div class="n_if_head"><div class="n_block">Conditions go here</div></div>
+                <div class="n_if_collumn">
+                    <div class="n_block">P1</div>
+                    <div class="n_block">Codeblock</div>
+                </div>
+                <div class="n_if_collumn">
+                    <div class="n_block">P2</div>
+                    <div class="n_block">Codeblock</div>
+                </div>
+                <div class="n_if_collumn">
+                    <div class="n_block">P3</div>
+                    <div class="n_block">Codeblock</div>
+                </div>
+                <div class="n_if_collumn">
+                    <div class="n_block">Other</div>
+                    <div class="n_block">Codeblock</div>
+                    <div class="n_block">Codeblock</div>
+                    <div class="n_if">
+                        <div class="n_if_head"><div class="n_block">Conditions go here</div></div>
+                        <div class="n_if_collumn">
+                            <div class="n_block">P1</div>
+                            <div class="n_block">Codeblock</div>
+                        </div>
+                        <div class="n_if_collumn">
+                            <div class="n_block">P2</div>
+                            <div class="n_block">Codeblock</div>
+                        </div>
+                        <div class="n_if_collumn">
+                            <div class="n_block">P3</div>
+                            <div class="n_block">Codeblock</div>
+                        </div>
+                        <div class="n_if_collumn">
+                            <div class="n_block">Other</div>
+                            <div class="n_block">Codeblock</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="n_block">TEXT</div>
+            <div class="n_block">TEXT</div>
+            <div class="n_block">TEXT</div>
+        </div>
+
+        <button onclick="go()">Start</button>
+    </body>
+</html>
